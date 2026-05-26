@@ -156,27 +156,28 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
-            // Get form inputs
-            const submitBtn = contactForm.querySelector('.btn-submit');
-            const originalBtnHtml = submitBtn.innerHTML;
-            
-            // Premium loading feedback
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = `<i data-lucide="loader" class="animate-spin"></i> <span>Sending...</span>`;
-            if (typeof lucide !== 'undefined') lucide.createIcons();
 
+            // Collect form data
+            const name    = (document.getElementById('name').value || '').trim();
+            const email   = (document.getElementById('email').value || '').trim();
+            const message = (document.getElementById('message').value || '').trim();
+
+            // Build mailto URL
+            const to      = 'alebaia81@gmail.com';
+            const subject = encodeURIComponent(`Contatto dal CV - ${name}`);
+            const body    = encodeURIComponent(
+                `Nome: ${name}\nEmail: ${email}\n\n${message}`
+            );
+            const mailtoUrl = `mailto:${to}?subject=${subject}&body=${body}`;
+
+            // Open the default mail client
+            window.location.href = mailtoUrl;
+
+            // Show success message and reset form
             setTimeout(() => {
-                // Success actions
-                contactForm.classList.add('hidden');
                 formSuccess.classList.remove('hidden');
                 contactForm.reset();
-                
-                // Reset button state
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalBtnHtml;
-                if (typeof lucide !== 'undefined') lucide.createIcons();
-            }, 1200);
+            }, 500);
         });
     }
 
