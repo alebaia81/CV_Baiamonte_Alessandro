@@ -159,14 +159,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Collect form data
             const name    = (document.getElementById('name').value || '').trim();
-            const email   = (document.getElementById('email').value || '').trim();
             const message = (document.getElementById('message').value || '').trim();
 
             // Build mailto URL
             const to      = 'alebaia81@gmail.com';
-            const subject = encodeURIComponent(`Contatto dal CV - ${name}`);
+            const subject = encodeURIComponent(`[CV Alessandro Baiamonte] Contatto da ${name}`);
             const body    = encodeURIComponent(
-                `Nome: ${name}\nEmail: ${email}\n\n${message}`
+                `Nome del mittente: ${name}\n\nMessaggio:\n${message}`
             );
             const mailtoUrl = `mailto:${to}?subject=${subject}&body=${body}`;
 
