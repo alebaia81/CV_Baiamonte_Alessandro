@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alessandro Baiamonte - Curriculum Vitae & Portfolio Interattivo. Specialista in Logistica, Team Leadership e Gestione Operativa.">
+    <title>Alessandro Baiamonte | CV Digitale & Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Elements -->
+    <div class="glow-bg">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span>AB</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">
+                    <span class="lang-it">Chi Sono</span>
+                    <span class="lang-en">About Me</span>
+                </a>
+                <a href="#timeline" class="nav-link">
+                    <span class="lang-it">Esperienze</span>
+                    <span class="lang-en">Experience</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <span class="lang-it">Competenze</span>
+                    <span class="lang-en">Skills</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <span class="lang-it">Contatti</span>
+                    <span class="lang-en">Contact</span>
+                </a>
+            </nav>
+            <div class="nav-actions">
+                <!-- Language Toggle Button -->
+                <button id="lang-toggle" class="btn-icon" aria-label="Cambia lingua" title="Switch Language">
+                    <i data-lucide="languages"></i>
+                    <span class="toggle-text">EN</span>
+                </button>
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="btn-icon" aria-label="Cambia tema" title="Toggle Theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-profile-area">
+                    <div class="avatar-wrapper">
+                        <img src="profile.jpg" alt="Alessandro Baiamonte" class="avatar-img">
+                        <div class="avatar-ring"></div>
+                    </div>
+                    <div class="badge-status">
+                        <span class="status-dot animate-ping"></span>
+                        <span class="lang-it">Disponibile a Nuove Opportunità</span>
+                        <span class="lang-en">Open to New Opportunities</span>
+                    </div>
+                </div>
+                
+                <div class="hero-text-area">
+                    <h1 class="hero-title">Alessandro Baiamonte</h1>
+                    <h2 class="hero-subtitle">
+                        <span class="lang-it">Specialista in Logistica &amp; Team Leader</span>
+                        <span class="lang-en">Logistics Specialist &amp; Team Leader</span>
+                    </h2>
+                    
+                    <p class="hero-description lang-it">
+                        Professionista con oltre 20 anni di esperienza operativa, specializzato nel coordinamento dei flussi logistici outbound, gestione del personale e supervisione di magazzino. Abituato a operare sotto pressione mantenendo standard qualitativi e di sicurezza elevati.
+                    </p>
+                    <p class="hero-description lang-en">
+                        Professional with over 20 years of hands-on experience, specialized in coordinating outbound logistics flows, staff management, and warehouse supervision. Accustomed to operating under high pressure while maintaining elevated quality and safety standards.
+                    </p>
+                    
+                    <div class="hero-ctas">
+                        <a href="#contact" class="btn btn-primary">
+                            <i data-lucide="mail"></i>
+                            <span class="lang-it">Contattami</span>
+                            <span class="lang-en">Get in Touch</span>
+                        </a>
+                        <a href="Currnew.pdf" download class="btn btn-secondary">
+                            <i data-lucide="download"></i>
+                            <span class="lang-it">Scarica CV (PDF)</span>
+                            <span class="lang-en">Download CV (PDF)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Dashboard Section -->
+        <section id="stats" class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon-wrapper">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="stat-num" data-val="20">20+</div>
+                    <div class="stat-label">
+                        <span class="lang-it">Anni di Esperienza</span>
+                        <span class="lang-en">Years of Experience</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon-wrapper">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <div class="stat-num" data-val="10">10+</div>
+                    <div class="stat-label">
+                        <span class="lang-it">Anni in Team Leadership</span>
+                        <span class="lang-en">Years in Team Leadership</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon-wrapper">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <div class="stat-num" data-val="100">100%</div>
+                    <div class="stat-label">
+                        <span class="lang-it">Efficienza Operativa</span>
+                        <span class="lang-en">Operational Efficiency</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Profile Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-it">Profilo Professionale</span>
+                    <span class="lang-en">Professional Profile</span>
+                </h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-card">
+                <div class="quote-icon">
+                    <i data-lucide="quote"></i>
+                </div>
+                <p class="about-text lang-it">
+                    "Abituato a gestire situazioni di alta pressione mantenendo efficienza e professionalità. Abilità nel trovare soluzioni rapide ed efficaci ai problemi che si presentano garantendo continuità operativa. Eccellente organizzazione del lavoro e delle priorità, rispettando le scadenze. Disponibilità di un mezzo di trasporto garantendo flessibilità e puntualità negli spostamenti."
+                </p>
+                <p class="about-text lang-en">
+                    "Accustomed to managing high-pressure situations while maintaining efficiency and professionalism. Proven ability to find fast, effective solutions to emerging problems, ensuring operational continuity. Excellent organization of work and priorities under tight deadlines. Fully mobile with personal transport, ensuring flexibility and punctuality."
+                </p>
+                <div class="personal-info-grid">
+                    <div class="info-item">
+                        <i data-lucide="calendar"></i>
+                        <div>
+                            <div class="info-label">
+                                <span class="lang-it">Data di Nascita</span>
+                                <span class="lang-en">Date of Birth</span>
+                            </div>
+                            <div class="info-val">20/12/1981 (Cremona)</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="map-pin"></i>
+                        <div>
+                            <div class="info-label">
+                                <span class="lang-it">Indirizzo</span>
+                                <span class="lang-en">Address</span>
+                            </div>
+                            <div class="info-val">Via Boschi 15, San Pietro in Cerro (PC)</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="car"></i>
+                        <div>
+                            <div class="info-label">
+                                <span class="lang-it">Mobilità</span>
+                                <span class="lang-en">Mobility</span>
+                            </div>
+                            <div class="info-val">
+                                <span class="lang-it">Automunito (Patente B)</span>
+                                <span class="lang-en">Owns Car (Driving License)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="timeline" class="timeline-section section-padding">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-it">Percorso Professionale</span>
+                    <span class="lang-en">Career Timeline</span>
+                </h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Timeline Filter Buttons -->
+            <div class="timeline-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <span class="lang-it">Tutte</span>
+                    <span class="lang-en">All</span>
+                </button>
+                <button class="filter-btn" data-filter="mgmt">
+                    <span class="lang-it">Leadership &amp; Shift</span>
+                    <span class="lang-en">Leadership &amp; Shift</span>
+                </button>
+                <button class="filter-btn" data-filter="log">
+                    <span class="lang-it">Logistica &amp; Tecnico</span>
+                    <span class="lang-en">Logistics &amp; Tech</span>
+                </button>
+            </div>
+
+            <!-- Vertical Timeline -->
+            <div class="timeline-container">
+                <!-- Timeline Line -->
+                <div class="timeline-track"></div>
+
+                <!-- Node 1: Logistica Uno (Warehouse Officer) -->
+                <div class="timeline-item" data-category="log">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021 - Present</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="role-title">
+                                <span class="lang-it">Warehouse Officer</span>
+                                <span class="lang-en">Warehouse Officer</span>
+                            </h3>
+                            <h4 class="company-name">Logistica Uno - Monticelli d'Ongina</h4>
+                        </div>
+                        <ul class="duties-list lang-it">
+                            <li>Supervisione delle operazioni quotidiane di magazzino e stoccaggio.</li>
+                            <li>Verifica del rispetto degli standard di sicurezza e procedure interne.</li>
+                            <li>Ottimizzazione degli spazi di stoccaggio e coordinamento del flusso merci.</li>
+                        </ul>
+                        <ul class="duties-list lang-en">
+                            <li>Supervision of daily warehouse operations and stock management.</li>
+                            <li>Verification of safety standards and adherence to internal procedures.</li>
+                            <li>Optimizing storage space layouts and coordinating incoming/outgoing goods.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Node 2: Unieuro spa (Capoturno) -->
+                <div class="timeline-item" data-category="mgmt">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020 - 2021</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="role-title">
+                                <span class="lang-it">Capoturno</span>
+                                <span class="lang-en">Shift Supervisor</span>
+                            </h3>
+                            <h4 class="company-name">Unieuro S.p.A.</h4>
+                        </div>
+                        <ul class="duties-list lang-it">
+                            <li>Gestione operativa e coordinamento diretto del personale addetto al magazzino.</li>
+                            <li>Pianificazione e monitoraggio dei flussi di lavoro giornalieri per massimizzare la produttività.</li>
+                            <li>Risoluzione rapida di anomalie e colli di bottiglia operativi durante i turni.</li>
+                        </ul>
+                        <ul class="duties-list lang-en">
+                            <li>Operational management and direct coordination of warehouse personnel.</li>
+                            <li>Planning and monitoring daily workflows to maximize floor productivity.</li>
+                            <li>Rapid resolution of operating bottlenecks and anomalies during active shifts.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Node 3: Unieuro spa (Affiancamento Capoturno) -->
+                <div class="timeline-item" data-category="mgmt">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2019 - 2020</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="role-title">
+                                <span class="lang-it">Affiancamento come Capoturno</span>
+                                <span class="lang-en">Shift Supervisor Mentor / Assistant</span>
+                            </h3>
+                            <h4 class="company-name">Unieuro S.p.A. (BSB Servizi Logistici Integrati)</h4>
+                        </div>
+                        <ul class="duties-list lang-it">
+                            <li>Supporto strategico nel coordinamento e nella gestione delle squadre operative.</li>
+                            <li>Formazione e affiancamento delle risorse per l'ottimizzazione delle procedure di magazzino.</li>
+                            <li>Responsabilità condivisa sulla corretta esecuzione delle attività di carico e scarico merci.</li>
+                        </ul>
+                        <ul class="duties-list lang-en">
+                            <li>Strategic support in coordinating and managing active floor teams.</li>
+                            <li>Training and mentoring new personnel on warehouse procedure optimization.</li>
+                            <li>Shared responsibility for the safe and correct execution of loading/unloading goods.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Node 4: Logistica Uno c/o Unieuro (Controllo Logistico) -->
+                <div class="timeline-item" data-category="log">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2019 - 2019</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="role-title">
+                                <span class="lang-it">Addetto al Controllo Logistico dei Trasporti</span>
+                                <span class="lang-en">Transport Logistics Controller</span>
+                            </h3>
+                            <h4 class="company-name">Logistica Uno c/o Unieuro S.p.A.</h4>
+                        </div>
+                        <ul class="duties-list lang-it">
+                            <li>Monitoraggio e tracciamento della flotta trasporti per garantire puntualità.</li>
+                            <li>Risoluzione di problematiche relative a spedizioni, consegne o ritardi.</li>
+                            <li>Interfaccia diretta tra i vettori di trasporto ed il dipartimento vendite/logistica.</li>
+                        </ul>
+                        <ul class="duties-list lang-en">
+                            <li>Monitoring and tracking the delivery fleet to ensure strict schedule adherence.</li>
+                            <li>Resolving real-time transit exceptions, delivery delays, or missing shipments.</li>
+                            <li>Direct liaison between regional carriers and the central logistics department.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Node 5: Unieuro spa (Team Leader Outbound) -->
+                <div class="timeline-item" data-category="mgmt">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2012 - 2019</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="role-title">
+                                <span class="lang-it">Team Leader Ufficio Outbound</span>
+                                <span class="lang-en">Outbound Office Team Leader</span>
+                            </h3>
+                            <h4 class="company-name">Unieuro S.p.A. (BSB Servizi Logistici Integrati)</h4>
+                        </div>
+                        <ul class="duties-list lang-it">
+                            <li>Responsabile dell'ufficio spedizioni e flussi in uscita (Outbound).</li>
+                            <li>Coordinamento del team impiegatizio addetto alla fatturazione, bollettazione e pianificazione viaggi.</li>
+                            <li>Gestione delle relazioni operative con corrieri nazionali e vettori espresso.</li>
+                            <li>Analisi dei KPI di spedizione e implementazione di correttivi per la riduzione dei tempi di transito.</li>
+                        </ul>
+                        <ul class="duties-list lang-en">
+                            <li>Manager of the outbound shipping office and outward logistical flows.</li>
+                            <li>Coordination of the administrative team handling invoicing, waybills, and transit schedules.</li>
+                            <li>Managing business relations and active interfaces with national freight and express couriers.</li>
+                            <li>Analyzing outbound KPIs and executing measures to reduce transit times and operational waste.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Node 6: Unieuro (Customer Care) -->
+                <div class="timeline-item" data-category="log">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2010 - 2012</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="role-title">
+                                <span class="lang-it">Impiegato Customer Care</span>
+                                <span class="lang-en">Customer Care Specialist</span>
+                            </h3>
+                            <h4 class="company-name">Unieuro S.p.A. - Piacenza</h4>
+                        </div>
+                        <ul class="duties-list lang-it">
+                            <li>Gestione delle richieste dei clienti e risoluzione dei ticket post-vendita.</li>
+                            <li>Gestione dei resi e tracciamento delle garanzie con i centri di assistenza autorizzati.</li>
+                            <li>Supporto e miglioramento continuo della soddisfazione cliente.</li>
+                        </ul>
+                        <ul class="duties-list lang-en">
+                            <li>Handling direct client inquiries and resolving post-sale service tickets.</li>
+                            <li>Managing merchandise returns and tracking warranty claims with authorized support hubs.</li>
+                            <li>Continual customer satisfaction monitoring and support delivery.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Node 7: BTF Costruzioni (Impiegato Tecnico/Logistico) -->
+                <div class="timeline-item" data-category="log">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2006 - 2009</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="role-title">
+                                <span class="lang-it">Impiegato Tecnico / Logistico</span>
+                                <span class="lang-en">Technical &amp; Logistics Clerk</span>
+                            </h3>
+                            <h4 class="company-name">Btf Costruzioni Meccaniche - Piacenza</h4>
+                        </div>
+                        <ul class="duties-list lang-it">
+                            <li>Coordinamento delle distinte base dei materiali e degli ordini ai fornitori.</li>
+                            <li>Gestione del magazzino dei semilavorati e delle materie prime metalliche.</li>
+                            <li>Supporto tecnico all'officina meccanica e pianificazione dei trasporti in cantiere.</li>
+                        </ul>
+                        <ul class="duties-list lang-en">
+                            <li>Coordinating material Bills of Materials (BOM) and direct supplier procurement.</li>
+                            <li>Warehouse stock management for raw metal components and semi-finished assemblies.</li>
+                            <li>Technical floor support for the machine shop and coordinate transport to job sites.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Node 8: Bennet (Addetto vendite) -->
+                <div class="timeline-item" data-category="log">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2001 - 2004</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="role-title">
+                                <span class="lang-it">Addetto Vendite Elettronica di Consumo</span>
+                                <span class="lang-en">Consumer Electronics Sales Associate</span>
+                            </h3>
+                            <h4 class="company-name">Bennet - Castelvetro</h4>
+                        </div>
+                        <ul class="duties-list lang-it">
+                            <li>Consulenza tecnica ai clienti del reparto informatica, telefonia ed elettrodomestici.</li>
+                            <li>Allestimento del reparto, gestione dello stock a scaffale e inventari di reparto.</li>
+                            <li>Promozione di pacchetti servizi aggiuntivi e garanzie accessorie.</li>
+                        </ul>
+                        <ul class="duties-list lang-en">
+                            <li>Technical consultation for retail customers across computers, mobile and appliances.</li>
+                            <li>Department setup, shelf display management, and periodic inventory audits.</li>
+                            <li>Up-selling additional product warranty and support packages to customers.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Grid Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-it">Competenze &amp; Skill</span>
+                    <span class="lang-en">Core Competencies &amp; Skills</span>
+                </h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Group 1: Leadership & Gestione -->
+                <div class="skill-category-card">
+                    <h3 class="skill-category-title">
+                        <i data-lucide="award"></i>
+                        <span class="lang-it">Leadership &amp; Coordinamento</span>
+                        <span class="lang-en">Leadership &amp; Coordination</span>
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span class="lang-it">Team Leadership &amp; Affiancamento</span>
+                                <span class="lang-en">Team Leadership &amp; Mentoring</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span class="lang-it">Gestione Turni e Personale</span>
+                                <span class="lang-en">Shift &amp; Staff Management</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span class="lang-it">Risoluzione Problemi ad Alta Pressione</span>
+                                <span class="lang-en">High-Pressure Problem Solving</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 98%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 2: Logistica Operativa -->
+                <div class="skill-category-card">
+                    <h3 class="skill-category-title">
+                        <i data-lucide="truck"></i>
+                        <span class="lang-it">Logistica Operativa &amp; Outbound</span>
+                        <span class="lang-en">Operations &amp; Outbound Logistics</span>
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span class="lang-it">Flussi Outbound &amp; Spedizioni</span>
+                                <span class="lang-en">Outbound Flows &amp; Shipping</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span class="lang-it">Controllo Vettori e Flotta</span>
+                                <span class="lang-en">Carrier &amp; Fleet Control</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span class="lang-it">Gestione Spazi &amp; Stoccaggio Magazzino</span>
+                                <span class="lang-en">Warehouse Space &amp; Stock Layout</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 3: Competenze Tecniche -->
+                <div class="skill-category-card">
+                    <h3 class="skill-category-title">
+                        <i data-lucide="cpu"></i>
+                        <span class="lang-it">Formazione e Soft Skills</span>
+                        <span class="lang-en">Education and Soft Skills</span>
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span class="lang-it">Diploma Tecnico Sistemi Energetici</span>
+                                <span class="lang-en">Energy Systems Technical Diploma</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span class="lang-it">Flessibilità &amp; Puntualità negli Spostamenti</span>
+                                <span class="lang-en">Flexibility &amp; Travel Punctuality</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span class="lang-it">Customer Care &amp; Supporto Clienti</span>
+                                <span class="lang-en">Customer Care &amp; Client Support</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="lang-it">Mettiamoci in Contatto</span>
+                    <span class="lang-en">Get in Touch</span>
+                </h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-container">
+                <!-- Info Column -->
+                <div class="contact-info">
+                    <h3 class="contact-info-title">
+                        <span class="lang-it">Informazioni di Contatto</span>
+                        <span class="lang-en">Contact Information</span>
+                    </h3>
+                    <p class="contact-info-subtitle lang-it">
+                        Compila il form per inviarmi un messaggio, oppure utilizza uno dei canali di contatto diretto qui sotto.
+                    </p>
+                    <p class="contact-info-subtitle lang-en">
+                        Fill out the form to send me a message, or reach out directly using one of the channels below.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <a href="tel:3398156719" class="contact-detail-item">
+                            <i data-lucide="phone"></i>
+                            <div>
+                                <div class="detail-label">
+                                    <span class="lang-it">Telefono</span>
+                                    <span class="lang-en">Phone</span>
+                                </div>
+                                <div class="detail-value">339 8156719</div>
+                            </div>
+                        </a>
+                        <a href="mailto:alebaia81@gmail.com" class="contact-detail-item">
+                            <i data-lucide="mail"></i>
+                            <div>
+                                <div class="detail-label">Email</div>
+                                <div class="detail-value">alebaia81@gmail.com</div>
+                            </div>
+                        </a>
+                        <div class="contact-detail-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <div class="detail-label">
+                                    <span class="lang-it">Sede</span>
+                                    <span class="lang-en">Location</span>
+                                </div>
+                                <div class="detail-value">San Pietro in Cerro, PC, Italia</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <span class="lang-it">Nome Completo</span>
+                                <span class="lang-en">Full Name</span>
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">
+                                <span class="lang-it">Messaggio</span>
+                                <span class="lang-en">Message</span>
+                            </label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Hello..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i data-lucide="send"></i>
+                            <span class="lang-it">Invia Messaggio</span>
+                            <span class="lang-en">Send Message</span>
+                        </button>
+                    </form>
+                    <div id="form-success" class="form-success-alert hidden">
+                        <i data-lucide="check-circle-2"></i>
+                        <span class="lang-it">Grazie! Il tuo messaggio è stato inviato correttamente.</span>
+                        <span class="lang-en">Thank you! Your message has been successfully sent.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="copyright">
+                &copy; <span id="year">2026</span> Alessandro Baiamonte.
+                <span class="lang-it">Tutti i diritti riservati.</span>
+                <span class="lang-en">All rights reserved.</span>
+            </p>
+            <div class="footer-actions">
+                <button onclick="window.print()" class="btn-text">
+                    <i data-lucide="printer"></i>
+                    <span class="lang-it">Stampa CV</span>
+                    <span class="lang-en">Print Resume</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
