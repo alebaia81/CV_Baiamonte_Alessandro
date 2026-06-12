@@ -159,24 +159,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Collect form data
             const name    = (document.getElementById('name').value || '').trim();
+            const email   = (document.getElementById('email').value || '').trim();
             const message = (document.getElementById('message').value || '').trim();
 
             // Build mailto URL
             const to      = 'alebaia81@gmail.com';
             const subject = encodeURIComponent(`[CV Alessandro Baiamonte] Contatto da ${name}`);
             const body    = encodeURIComponent(
-                `Nome del mittente: ${name}\n\nMessaggio:\n${message}`
+                `Nome: ${name}\nEmail mittente: ${email}\n\nMessaggio:\n${message}`
             );
             const mailtoUrl = `mailto:${to}?subject=${subject}&body=${body}`;
 
-            // Open the default mail client
-            window.location.href = mailtoUrl;
+            // Create a temporary <a> and click it — most reliable cross-browser method
+            const tempLink = document.createElement('a');
+            tempLink.href = mailtoUrl;
+            tempLink.style.display = 'none';
+            document.body.appendChild(tempLink);
+            tempLink.click();
+            document.body.removeChild(tempLink);
 
-            // Show success message and reset form
+            // Show success message and reset form after brief delay
             setTimeout(() => {
                 formSuccess.classList.remove('hidden');
                 contactForm.reset();
-            }, 500);
+            }, 600);
         });
     }
 
